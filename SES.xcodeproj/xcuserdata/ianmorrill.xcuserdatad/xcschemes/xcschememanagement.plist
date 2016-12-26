@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Safari Extension Suite Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Scratch Enhancement Suite.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>961684491E0C5C800039D952</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9616845F1E0C5DAA0039D952</key>
 		<dict>
 			<key>primary</key>
 			<true/>

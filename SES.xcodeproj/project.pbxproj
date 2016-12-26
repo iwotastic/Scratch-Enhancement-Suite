@@ -13,6 +13,13 @@
 		961684391E0C5C7F0039D952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961684371E0C5C7F0039D952 /* Main.storyboard */; };
 		961684441E0C5C800039D952 /* Scratch_Enhancement_SuiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961684431E0C5C800039D952 /* Scratch_Enhancement_SuiteTests.swift */; };
 		9616844F1E0C5C800039D952 /* Scratch_Enhancement_SuiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616844E1E0C5C800039D952 /* Scratch_Enhancement_SuiteUITests.swift */; };
+		961684631E0C5DAA0039D952 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961684621E0C5DAA0039D952 /* Cocoa.framework */; };
+		961684681E0C5DAA0039D952 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961684671E0C5DAA0039D952 /* SafariExtensionHandler.swift */; };
+		9616846A1E0C5DAA0039D952 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961684691E0C5DAA0039D952 /* SafariExtensionViewController.swift */; };
+		9616846D1E0C5DAA0039D952 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9616846B1E0C5DAA0039D952 /* SafariExtensionViewController.xib */; };
+		961684701E0C5DAA0039D952 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9616846F1E0C5DAA0039D952 /* script.js */; };
+		961684751E0C5DAA0039D952 /* Safari Extension Suite Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 961684601E0C5DAA0039D952 /* Safari Extension Suite Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9616847B1E0C79150039D952 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9616847A1E0C79150039D952 /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,21 +37,51 @@
 			remoteGlobalIDString = 9616842D1E0C5C7F0039D952;
 			remoteInfo = "Scratch Enhancement Suite";
 		};
+		961684731E0C5DAA0039D952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 961684261E0C5C7F0039D952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9616845F1E0C5DAA0039D952;
+			remoteInfo = "Safari Extension Suite Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		961684791E0C5DAA0039D952 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				961684751E0C5DAA0039D952 /* Safari Extension Suite Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		9616842E1E0C5C7F0039D952 /* Scratch Enhancement Suite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scratch Enhancement Suite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9616842E1E0C5C7F0039D952 /* SES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961684311E0C5C7F0039D952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		961684331E0C5C7F0039D952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		961684351E0C5C7F0039D952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		961684381E0C5C7F0039D952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9616843A1E0C5C7F0039D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9616843F1E0C5C800039D952 /* Scratch Enhancement SuiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scratch Enhancement SuiteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9616843F1E0C5C800039D952 /* SESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961684431E0C5C800039D952 /* Scratch_Enhancement_SuiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_Enhancement_SuiteTests.swift; sourceTree = "<group>"; };
 		961684451E0C5C800039D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9616844A1E0C5C800039D952 /* Scratch Enhancement SuiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scratch Enhancement SuiteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9616844A1E0C5C800039D952 /* SESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9616844E1E0C5C800039D952 /* Scratch_Enhancement_SuiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratch_Enhancement_SuiteUITests.swift; sourceTree = "<group>"; };
 		961684501E0C5C800039D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961684601E0C5DAA0039D952 /* Safari Extension Suite Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Safari Extension Suite Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		961684621E0C5DAA0039D952 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		961684661E0C5DAA0039D952 /* Safari_Extension_Suite_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safari_Extension_Suite_Extension.entitlements; sourceTree = "<group>"; };
+		961684671E0C5DAA0039D952 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		961684691E0C5DAA0039D952 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		9616846C1E0C5DAA0039D952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		9616846E1E0C5DAA0039D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9616846F1E0C5DAA0039D952 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		9616847A1E0C79150039D952 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +106,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9616845D1E0C5DAA0039D952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961684631E0C5DAA0039D952 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		961684251E0C5C7E0039D952 = {
 			isa = PBXGroup;
 			children = (
-				961684301E0C5C7F0039D952 /* Scratch Enhancement Suite */,
-				961684421E0C5C800039D952 /* Scratch Enhancement SuiteTests */,
-				9616844D1E0C5C800039D952 /* Scratch Enhancement SuiteUITests */,
+				961684301E0C5C7F0039D952 /* SES */,
+				961684421E0C5C800039D952 /* SESTests */,
+				9616844D1E0C5C800039D952 /* SESUITests */,
+				961684641E0C5DAA0039D952 /* SES Extension */,
+				961684611E0C5DAA0039D952 /* Frameworks */,
 				9616842F1E0C5C7F0039D952 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,14 +132,15 @@
 		9616842F1E0C5C7F0039D952 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9616842E1E0C5C7F0039D952 /* Scratch Enhancement Suite.app */,
-				9616843F1E0C5C800039D952 /* Scratch Enhancement SuiteTests.xctest */,
-				9616844A1E0C5C800039D952 /* Scratch Enhancement SuiteUITests.xctest */,
+				9616842E1E0C5C7F0039D952 /* SES.app */,
+				9616843F1E0C5C800039D952 /* SESTests.xctest */,
+				9616844A1E0C5C800039D952 /* SESUITests.xctest */,
+				961684601E0C5DAA0039D952 /* Safari Extension Suite Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		961684301E0C5C7F0039D952 /* Scratch Enhancement Suite */ = {
+		961684301E0C5C7F0039D952 /* SES */ = {
 			isa = PBXGroup;
 			children = (
 				961684311E0C5C7F0039D952 /* AppDelegate.swift */,
@@ -101,50 +149,86 @@
 				961684371E0C5C7F0039D952 /* Main.storyboard */,
 				9616843A1E0C5C7F0039D952 /* Info.plist */,
 			);
+			name = SES;
 			path = "Scratch Enhancement Suite";
 			sourceTree = "<group>";
 		};
-		961684421E0C5C800039D952 /* Scratch Enhancement SuiteTests */ = {
+		961684421E0C5C800039D952 /* SESTests */ = {
 			isa = PBXGroup;
 			children = (
 				961684431E0C5C800039D952 /* Scratch_Enhancement_SuiteTests.swift */,
 				961684451E0C5C800039D952 /* Info.plist */,
 			);
+			name = SESTests;
 			path = "Scratch Enhancement SuiteTests";
 			sourceTree = "<group>";
 		};
-		9616844D1E0C5C800039D952 /* Scratch Enhancement SuiteUITests */ = {
+		9616844D1E0C5C800039D952 /* SESUITests */ = {
 			isa = PBXGroup;
 			children = (
 				9616844E1E0C5C800039D952 /* Scratch_Enhancement_SuiteUITests.swift */,
 				961684501E0C5C800039D952 /* Info.plist */,
 			);
+			name = SESUITests;
 			path = "Scratch Enhancement SuiteUITests";
+			sourceTree = "<group>";
+		};
+		961684611E0C5DAA0039D952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				961684621E0C5DAA0039D952 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		961684641E0C5DAA0039D952 /* SES Extension */ = {
+			isa = PBXGroup;
+			children = (
+				961684671E0C5DAA0039D952 /* SafariExtensionHandler.swift */,
+				961684691E0C5DAA0039D952 /* SafariExtensionViewController.swift */,
+				9616846B1E0C5DAA0039D952 /* SafariExtensionViewController.xib */,
+				9616846E1E0C5DAA0039D952 /* Info.plist */,
+				9616846F1E0C5DAA0039D952 /* script.js */,
+				9616847A1E0C79150039D952 /* style.css */,
+				961684651E0C5DAA0039D952 /* Supporting Files */,
+			);
+			name = "SES Extension";
+			path = "Safari Extension Suite Extension";
+			sourceTree = "<group>";
+		};
+		961684651E0C5DAA0039D952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				961684661E0C5DAA0039D952 /* Safari_Extension_Suite_Extension.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9616842D1E0C5C7F0039D952 /* Scratch Enhancement Suite */ = {
+		9616842D1E0C5C7F0039D952 /* SES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961684531E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement Suite" */;
+			buildConfigurationList = 961684531E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SES" */;
 			buildPhases = (
 				9616842A1E0C5C7F0039D952 /* Sources */,
 				9616842B1E0C5C7F0039D952 /* Frameworks */,
 				9616842C1E0C5C7F0039D952 /* Resources */,
+				961684791E0C5DAA0039D952 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				961684741E0C5DAA0039D952 /* PBXTargetDependency */,
 			);
-			name = "Scratch Enhancement Suite";
+			name = SES;
 			productName = "Scratch Enhancement Suite";
-			productReference = 9616842E1E0C5C7F0039D952 /* Scratch Enhancement Suite.app */;
+			productReference = 9616842E1E0C5C7F0039D952 /* SES.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9616843E1E0C5C800039D952 /* Scratch Enhancement SuiteTests */ = {
+		9616843E1E0C5C800039D952 /* SESTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961684561E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement SuiteTests" */;
+			buildConfigurationList = 961684561E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SESTests" */;
 			buildPhases = (
 				9616843B1E0C5C800039D952 /* Sources */,
 				9616843C1E0C5C800039D952 /* Frameworks */,
@@ -155,14 +239,14 @@
 			dependencies = (
 				961684411E0C5C800039D952 /* PBXTargetDependency */,
 			);
-			name = "Scratch Enhancement SuiteTests";
+			name = SESTests;
 			productName = "Scratch Enhancement SuiteTests";
-			productReference = 9616843F1E0C5C800039D952 /* Scratch Enhancement SuiteTests.xctest */;
+			productReference = 9616843F1E0C5C800039D952 /* SESTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		961684491E0C5C800039D952 /* Scratch Enhancement SuiteUITests */ = {
+		961684491E0C5C800039D952 /* SESUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961684591E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement SuiteUITests" */;
+			buildConfigurationList = 961684591E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SESUITests" */;
 			buildPhases = (
 				961684461E0C5C800039D952 /* Sources */,
 				961684471E0C5C800039D952 /* Frameworks */,
@@ -173,10 +257,27 @@
 			dependencies = (
 				9616844C1E0C5C800039D952 /* PBXTargetDependency */,
 			);
-			name = "Scratch Enhancement SuiteUITests";
+			name = SESUITests;
 			productName = "Scratch Enhancement SuiteUITests";
-			productReference = 9616844A1E0C5C800039D952 /* Scratch Enhancement SuiteUITests.xctest */;
+			productReference = 9616844A1E0C5C800039D952 /* SESUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9616845F1E0C5DAA0039D952 /* Safari Extension Suite Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961684761E0C5DAA0039D952 /* Build configuration list for PBXNativeTarget "Safari Extension Suite Extension" */;
+			buildPhases = (
+				9616845C1E0C5DAA0039D952 /* Sources */,
+				9616845D1E0C5DAA0039D952 /* Frameworks */,
+				9616845E1E0C5DAA0039D952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Safari Extension Suite Extension";
+			productName = "Safari Extension Suite Extension";
+			productReference = 961684601E0C5DAA0039D952 /* Safari Extension Suite Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -205,9 +306,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9616842D1E0C5C7F0039D952;
 					};
+					9616845F1E0C5DAA0039D952 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 33P8N94PY3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = 961684291E0C5C7F0039D952 /* Build configuration list for PBXProject "Scratch Enhancement Suite" */;
+			buildConfigurationList = 961684291E0C5C7F0039D952 /* Build configuration list for PBXProject "SES" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +326,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9616842D1E0C5C7F0039D952 /* Scratch Enhancement Suite */,
-				9616843E1E0C5C800039D952 /* Scratch Enhancement SuiteTests */,
-				961684491E0C5C800039D952 /* Scratch Enhancement SuiteUITests */,
+				9616842D1E0C5C7F0039D952 /* SES */,
+				9616843E1E0C5C800039D952 /* SESTests */,
+				961684491E0C5C800039D952 /* SESUITests */,
+				9616845F1E0C5DAA0039D952 /* Safari Extension Suite Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +355,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9616845E1E0C5DAA0039D952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9616846D1E0C5DAA0039D952 /* SafariExtensionViewController.xib in Resources */,
+				9616847B1E0C79150039D952 /* style.css in Resources */,
+				961684701E0C5DAA0039D952 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,18 +396,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9616845C1E0C5DAA0039D952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9616846A1E0C5DAA0039D952 /* SafariExtensionViewController.swift in Sources */,
+				961684681E0C5DAA0039D952 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		961684411E0C5C800039D952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9616842D1E0C5C7F0039D952 /* Scratch Enhancement Suite */;
+			target = 9616842D1E0C5C7F0039D952 /* SES */;
 			targetProxy = 961684401E0C5C800039D952 /* PBXContainerItemProxy */;
 		};
 		9616844C1E0C5C800039D952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9616842D1E0C5C7F0039D952 /* Scratch Enhancement Suite */;
+			target = 9616842D1E0C5C7F0039D952 /* SES */;
 			targetProxy = 9616844B1E0C5C800039D952 /* PBXContainerItemProxy */;
+		};
+		961684741E0C5DAA0039D952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9616845F1E0C5DAA0039D952 /* Safari Extension Suite Extension */;
+			targetProxy = 961684731E0C5DAA0039D952 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -301,6 +432,14 @@
 				961684381E0C5C7F0039D952 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9616846B1E0C5DAA0039D952 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9616846C1E0C5DAA0039D952 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +538,7 @@
 		961684541E0C5C800039D952 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 33P8N94PY3;
@@ -413,6 +553,7 @@
 		961684551E0C5C800039D952 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 33P8N94PY3;
@@ -436,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ianmorrill.Scratch-Enhancement-SuiteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratch Enhancement Suite.app/Contents/MacOS/Scratch Enhancement Suite";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SES.app/Contents/MacOS/SES";
 			};
 			name = Debug;
 		};
@@ -452,7 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ianmorrill.Scratch-Enhancement-SuiteTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scratch Enhancement Suite.app/Contents/MacOS/Scratch Enhancement Suite";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SES.app/Contents/MacOS/SES";
 			};
 			name = Release;
 		};
@@ -486,10 +627,38 @@
 			};
 			name = Release;
 		};
+		961684771E0C5DAA0039D952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Safari Extension Suite Extension/Safari_Extension_Suite_Extension.entitlements";
+				DEVELOPMENT_TEAM = 33P8N94PY3;
+				INFOPLIST_FILE = "Safari Extension Suite Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ianmorrill.Scratch-Enhancement-Suite.Safari-Extension-Suite-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		961684781E0C5DAA0039D952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Safari Extension Suite Extension/Safari_Extension_Suite_Extension.entitlements";
+				DEVELOPMENT_TEAM = 33P8N94PY3;
+				INFOPLIST_FILE = "Safari Extension Suite Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ianmorrill.Scratch-Enhancement-Suite.Safari-Extension-Suite-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		961684291E0C5C7F0039D952 /* Build configuration list for PBXProject "Scratch Enhancement Suite" */ = {
+		961684291E0C5C7F0039D952 /* Build configuration list for PBXProject "SES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961684511E0C5C800039D952 /* Debug */,
@@ -498,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		961684531E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement Suite" */ = {
+		961684531E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961684541E0C5C800039D952 /* Debug */,
@@ -506,7 +675,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		961684561E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement SuiteTests" */ = {
+		961684561E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SESTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961684571E0C5C800039D952 /* Debug */,
@@ -514,11 +683,19 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		961684591E0C5C800039D952 /* Build configuration list for PBXNativeTarget "Scratch Enhancement SuiteUITests" */ = {
+		961684591E0C5C800039D952 /* Build configuration list for PBXNativeTarget "SESUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9616845A1E0C5C800039D952 /* Debug */,
 				9616845B1E0C5C800039D952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		961684761E0C5DAA0039D952 /* Build configuration list for PBXNativeTarget "Safari Extension Suite Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961684771E0C5DAA0039D952 /* Debug */,
+				961684781E0C5DAA0039D952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
